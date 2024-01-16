@@ -23,6 +23,7 @@ function playAllSound(e){
                 element.classList.remove("playing")
             });
             enterIsPressed = false
+            
         }
         }
 }
