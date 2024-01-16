@@ -51,7 +51,5 @@ function playSoundChecked(){
                 element.nextElementSibling.classList.remove("Selected")
             }
         })
-
-
     });
 }
