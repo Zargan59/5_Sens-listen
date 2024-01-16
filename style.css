@@ -23,3 +23,45 @@ body{
     color: white;
     width: 400px;
 }
+
+.btnSection{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btnSection button{
+    padding: 10px 15px;
+}
+
+@media (max-width: 650px) {
+    .content{
+        width: 350px;
+        gap: 20px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .audioContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 300px;
+        gap: 5px;
+    }
+    .textContent{
+        margin: 0;
+    }
+    .soundContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .audioContent p{
+        width: fit-content;
+    }
+}

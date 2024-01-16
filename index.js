@@ -1,13 +1,21 @@
 DontPlaySound()
 playSoundChecked()
 
-document.addEventListener("keypress", playAllSound)
+document.addEventListener("keypress", (e)=>{
+    if(e.key == " "){
+        playAllSound() 
+    }
+})
+const buttonPlay = document.getElementById("play")
+const buttonReset = document.getElementById("reset")
 
-const audios =document.querySelectorAll(".sound");
+buttonPlay.addEventListener("click", playAllSound)
+buttonReset.addEventListener("click", resetAllSound)
+
+const audios = document.querySelectorAll(".sound");
 let enterIsPressed = false
 
-function playAllSound(e){
-     if(e.keyCode == 32){
+function playAllSound(){
         if(enterIsPressed === false){
             audios.forEach(element => {
                 if(element.className == "sound Selected"){
@@ -24,7 +32,6 @@ function playAllSound(e){
             });
             enterIsPressed = false
             
-        }
         }
 }
 
@@ -52,4 +59,10 @@ function playSoundChecked(){
             }
         })
     });
+}
+
+function resetAllSound(){
+audios.forEach(element => {
+    element.currentTime = 0
+});
 }
