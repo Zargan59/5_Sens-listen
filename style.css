@@ -12,6 +12,12 @@ body{
     width: min-content;
     margin: 150px 20px;
 }
+.soundContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
 
 .audioContent{
     display: flex;
