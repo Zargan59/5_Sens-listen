@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #383838;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: min-content;
+    margin: 150px 20px;
+}
+
+.audioContent{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.audioContent p {
+    color: white;
+    width: 400px;
+}
