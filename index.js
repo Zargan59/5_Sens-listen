@@ -29,7 +29,6 @@ function playAllSound(e){
 
 function DontPlaySound (){
     const checkboxs = document.querySelectorAll(".audioContent input");
-    console.log("Je décoche tout");
     checkboxs.forEach(element => {
         element.checked = false
     });
@@ -53,23 +52,5 @@ function playSoundChecked(){
         })
 
 
-
-
-
-        //Si le son est joué et que j'appuie sur la checkbox, je stop le son
-        // console.log(element.nextElementSibling.className);
-        // if(element.checked){
-        //     console.log("Son joué et case coché");
-        // }
-        // if(element.checked == true){
-        //    element.nextElementSibling.classList.remove("sound")
-        //    console.log(element.closest(".sound"));
-        // }
-        // else{
-        //     if(element.checked== false&& element.nextElementSibling.className == ""){
-        //         element.nextElementSibling.classList.add("sound")
-        //     }
-           
-        // }
     });
 }
