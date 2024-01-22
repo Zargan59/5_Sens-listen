@@ -113,6 +113,8 @@ body{
 
 @media (max-width: 650px) {
     .content{
+        display: flex;
+        flex-direction: column;
         width: 350px;
         gap: 20px;
         margin: auto;
