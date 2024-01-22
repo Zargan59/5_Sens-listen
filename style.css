@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body{
     background-color: #383838;
 }
 .content{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 25px auto 25px ;
+    width: 40%;
     gap: 20px;
-    width: min-content;
-    margin: 150px 20px;
+    /* border: 2px solid green; */
+
 }
 .soundContent{
     display: flex;
@@ -24,21 +31,85 @@ body{
     gap: 25px;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    margin: auto;
 }
 .audioContent p {
     color: white;
-    width: 400px;
+    width: 250px;
+    display: none;
 }
 
 .btnSection{
-    margin: auto;
-    width: fit-content;
+    margin:20px auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 20px;
+    /* border: 2px solid red; */
+
 }
 .btnSection button{
     padding: 10px 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+.pictureSection{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: stretch;
+    gap: 20px;
+    width: 50%;
+    margin: 50px auto 0  ;
+    /* border: 2px solid blue; */
+
+
+}
+.picture{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+.image1{
+    background: url(Images/2231462_w1300h975c1cx650cy315cxt0cyt0cxb1300cyb630.jpg)center center/cover;
+}
+.image2{
+    background: url(Images/boire-tasses-cafe-par-jour-est-bon-pour-coeur.jpg)center center/cover;
+}
+.image3{
+    background: url(Images/csm_6.laatdeboteruitbruisen_07b3d9a78b.jpg)center center/cover;
+}
+.image4{
+    background: url(Images/eclr-verre-eau.jpg)center center/cover;
+}
+.image5{
+    background: url(Images/GettyImages-855532396-scaled.jpg)center center/cover;
+}
+.image6{
+    background: url(Images/pexels-photo-3886613.jpeg)center center/cover;
+}
+.image7{
+    background: url(Images/produits-couverts.jpg)center center/cover;
+}
+.image8{
+    background: url(Images/24361131.jpg) center center/cover;
+}
+.pictureSelected{
+    border: 4px solid rgb(58, 181, 58);
+}
+.winCondition{
+    /* border: 2px solid green; */
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 650px) {
@@ -69,5 +140,13 @@ body{
     }
     .audioContent p{
         width: fit-content;
+    }
+    .pictureSection{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .picture{
+        width: 150px;
+        height: 150px;
     }
 }

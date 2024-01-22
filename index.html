@@ -9,9 +9,9 @@
   <body>
     <div class="content">
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="paquet">
           <input type="checkbox" class="checkbox" />
-          <audio controls src="soundBank/Paquet-Opening.mp3" class="sound"></audio>
+          <audio controls id="audioPaquet" src="soundBank/Paquet-Opening.mp3" class="sound"></audio>
         </div>
         <div class="textContent">
           <p>Ouverture de paquet</p>
@@ -19,9 +19,9 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="oil">
           <input type="checkbox" class="checkbox" />
-          <audio controls src="soundBank/Huile-de-Friture.mp3" class="sound"></audio>
+          <audio controls id="audioOil"  src="soundBank/Huile-de-Friture.mp3" class="sound"></audio>
         </div>
         <div class="textContent">
           <p>Huile frit</p>
@@ -29,9 +29,9 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="aluminium">
           <input type="checkbox" class="checkbox" />
-          <audio controls src="soundBank/Aluminium.mp3" class="sound"></audio>
+          <audio controls id="audioAlu" src="soundBank/Aluminium.mp3" class="sound"></audio>
         </div>
         <div class="textContent">
           <p>Papier d'aluminium</p>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="boire">
           <input type="checkbox" class="checkbox" />
           <audio controls src="soundBank/Boire.mp3" class="sound"></audio>
         </div>
@@ -49,7 +49,7 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="cuilleres">
             <input type="checkbox" class="checkbox" />
             <audio controls src="soundBank/Bruit-de-cuillères.mp3" class="sound" ></audio>
         </div>
@@ -59,7 +59,7 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="cereale">
           <input type="checkbox" class="checkbox" />
           <audio controls src="soundBank/Céréales.mp3" class="sound"></audio>
         </div>
@@ -69,7 +69,7 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="eau">
           <input type="checkbox" class="checkbox" />
           <audio controls src="soundBank/Eau.mp3" class="sound"></audio>
         </div>
@@ -79,7 +79,7 @@
       </div>
 
       <div class="audioContent">
-        <div class="soundContent">
+        <div class="soundContent" id="tasse">
           <input type="checkbox" class="checkbox" />
           <audio controls src="soundBank/Touiller-le-café.mp3" class="sound"></audio>
         </div>
@@ -90,10 +90,34 @@
     </div>
 
     <div class="btnSection">
-        <button id="play">Lancer les sons</button>
-        <button id="reset">Reset</button>
+      <button id="play">Lancer les sons</button>
+      <button id="resetSound">Reset</button>
+  </div>
+   
+
+    <div class="pictureSection">
+      <div class="picture image1 aluminium" ></div>
+      <div class="picture image2 tasse" ></div>
+      <div class="picture image3 oil"></div>
+      <div class="picture image4 boire"></div>
+      <div class="picture image5 eau"></div>
+      <div class="picture image6 cereale"></div>
+      <div class="picture image7 cuilleres"></div>
+      <div class="picture image8 paquet"></div>
     </div>
 
+    <div class="btnSection">
+      <button id="valid">Valider la sélection</button>
+      <button id="reset">Restart</button>
+  </div>
+
+
+  <div class="winCondition">
+    <h3 id="winMessage">Vous avez l'ouie fine! Félicitations !!</h3>
+    <!-- <h3>Ecoutez plus attentivement</h3> -->
+    
+  <!-- Veuillez selectionnez X images -->
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
