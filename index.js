@@ -1,6 +1,6 @@
 const checkboxs = document.querySelectorAll(".audioContent input");
 const winCondition = document.querySelector("#winMessage")
-// winCondition.innerHTML = ""
+winCondition.innerHTML = ""
 
 const oil = document.getElementById("audioOil")
 const paquet =document.getElementById("audioPaquet")
