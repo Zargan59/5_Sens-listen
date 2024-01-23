@@ -96,6 +96,8 @@ function playSoundChecked(){
 function resetAllSound(){
 audios.forEach(element => {
     element.currentTime = 0
+    element.pause()
+    element.classList.remove("playing")
 });
 }
 
@@ -145,6 +147,10 @@ if(test !== checkPicture.length){
 else{
     console.log("gagné");
     winCondition.innerHTML = "Vous avez l'ouïe fine ! Félicitations !!"
+    audios.forEach(element => {
+        element.pause()
+        element.classList.remove("playing")
+    });
 }
 
 }
